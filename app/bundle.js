@@ -68,6 +68,8 @@
 /* 0 */
 /***/ function(module, exports) {
 
+// 猫の一覧を配列で返すJavaScriptです。
+
 var cats = ["tama", "kuro", "tora"];
 module.exports = cats;
 
@@ -75,6 +77,9 @@ module.exports = cats;
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
+
+// エントリーポイントとなるメインのJavaScriptです。
+// 猫の一覧を読み込んでログ出力します。
 
 var cats = __webpack_require__(0);
 console.log(cats);
