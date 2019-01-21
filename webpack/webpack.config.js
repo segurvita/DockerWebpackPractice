@@ -6,9 +6,14 @@ module.exports = {
     path: 'dist',
     filename: './bundle.js'
   },
+  // モジュールの設定
   module: {
+    // ソースコードでrequireする時のローダー
     loaders: [
-      {test: /\.yml$/, loader: 'json-loader!yaml-loader'}
+      {
+        test: /\.yml$/,
+        loader: 'json-loader!yaml-loader'
+      }
     ]
   }
 };
