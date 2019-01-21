@@ -5,5 +5,10 @@ module.exports = {
   output: {
     path: 'dist',
     filename: './bundle.js'
+  },
+  module: {
+    loaders: [
+      {test: /\.yml$/, loader: 'json-loader!yaml-loader'}
+    ]
   }
 };
