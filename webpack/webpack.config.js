@@ -1,3 +1,6 @@
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   // 入力ファイル設定
   entry: "./src/app.js",
@@ -20,5 +23,12 @@ module.exports = {
         loaders: ["json-loader", "yaml-loader"]
       }
     ]
-  }
+  },
+  // プラグイン
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Sample Page'
+    })
+  ]
 };
