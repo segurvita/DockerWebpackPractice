@@ -1,5 +1,5 @@
 # nodeのイメージをベースとする
-FROM node:7.1.0
+FROM node:8.4.0
 
 # 作業ディレクトリ
 WORKDIR /my_webpack
@@ -10,6 +10,9 @@ COPY ./package.json package.json
 # Node.js依存ライブラリを導入
 RUN npm init -y
 RUN npm install
+
+# ライブラリのバージョンを確認
+RUN npm list --depth=0
 
 # app.jsをwebpackでビルドし、bundle.jsを出力
 CMD ["npm", "run", "watch"]
