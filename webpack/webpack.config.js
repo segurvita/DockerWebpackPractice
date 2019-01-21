@@ -1,10 +1,10 @@
 module.exports = {
   // 入力ファイル設定
-  entry: './src/app.js',
+  entry: "./src/app.js",
   // 出力ファイル設定
   output: {
-    path: 'dist',
-    filename: './bundle.js'
+    path: "dist",
+    filename: "./bundle.js"
   },
   // モジュールの設定
   module: {
@@ -12,7 +12,7 @@ module.exports = {
     loaders: [
       {
         test: /\.yml$/,
-        loaders: ['json-loader', 'yaml-loader']
+        loaders: ["json-loader", "yaml-loader"]
       }
     ]
   }
