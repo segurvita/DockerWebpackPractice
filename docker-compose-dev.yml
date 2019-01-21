@@ -1,0 +1,10 @@
+version: '2'
+
+volumes:
+  sync-volume:
+    external: true
+
+services:
+  webpack:
+    volumes:
+      - sync-volume:/my_webpack/src
