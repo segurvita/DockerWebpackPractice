@@ -9,11 +9,6 @@ module.exports = {
     path: "dist",
     filename: "./bundle.js"
   },
-  // 名前解決の設定
-  resolve: {
-    // 拡張子の設定
-    extensions: ["", ".webpack.js", ".web.js", ".js", ".yml"]
-  },
   // モジュールの設定
   module: {
     // ソースコードでrequireする時のローダー
