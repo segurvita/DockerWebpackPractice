@@ -12,7 +12,7 @@ module.exports = {
     loaders: [
       {
         test: /\.yml$/,
-        loader: 'json-loader!yaml-loader'
+        loaders: ['json-loader', 'yaml-loader']
       }
     ]
   }
