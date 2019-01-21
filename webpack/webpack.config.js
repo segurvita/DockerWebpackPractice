@@ -1,5 +1,5 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require("webpack");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   // 入力ファイル設定
@@ -28,7 +28,7 @@ module.exports = {
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Sample Page'
+      title: "Sample Page"
     })
   ],
   // ソースマップ
