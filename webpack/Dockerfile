@@ -1,5 +1,5 @@
 # nodeのイメージをベースとする
-FROM node:8.4.0
+FROM node:10.15.0
 
 # 作業ディレクトリ
 WORKDIR /my_webpack
