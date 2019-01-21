@@ -1,11 +1,14 @@
-# Webpack
-webpack:
-  # ビルド対象のdockerfileのパス
-  build: ./webpack
+version: '2'
 
-  # マウントするボリューム
-  volumes:
-    - ./src:/my_webpack/src
-    - ./dist:/my_webpack/dist
-    - ./webpack/package.json:/my_webpack/package.json
-    - ./webpack/webpack.config.js:/my_webpack/webpack.config.js
+services:
+  # Webpack
+  webpack:
+    # ビルド対象のdockerfileのパス
+    build: ./webpack
+
+    # マウントするボリューム
+    volumes:
+      - ./src:/my_webpack/src
+      - ./dist:/my_webpack/dist
+      - ./webpack/package.json:/my_webpack/package.json
+      - ./webpack/webpack.config.js:/my_webpack/webpack.config.js
