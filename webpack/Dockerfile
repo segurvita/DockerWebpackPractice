@@ -12,4 +12,4 @@ RUN npm install --save-dev yaml-loader
 RUN npm install --save-dev html-webpack-plugin
 
 # app.jsをwebpackでビルドし、bundle.jsを出力
-CMD ["npm", "run", "build"]
+CMD ["npm", "run", "watch"]
